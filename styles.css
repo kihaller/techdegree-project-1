@@ -15,17 +15,21 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color:#0399ff;
 }
 a:hover {
   color: #6633ff;
+}
+
+.nav-link {
+  color: black;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
-  background: black;
+  background: whitesmoke;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -43,7 +47,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: black;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -57,14 +61,13 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/background.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
-}
-header {
+  padding-top: 50px;
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -73,33 +76,31 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
-}
+
+
 .tag {
   background-color: #efefef;
   color: black;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 1px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  background-color: whitesmoke;
+  color: black;
 }
 .card {
+  display: inline-block;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  background: whitesmoke;
+  border-bottom: solid black;
+  border-radius: 1px;
+  border-style: solid;
   transition: all .5s;
-}
-.card:hover {
-  border-color: #ff99ff;
 }
 
 ul.skills {
@@ -110,7 +111,7 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #999;
   color: white;
   padding: 5px 10px;
   margin: 2px;
@@ -171,12 +172,14 @@ a.social:hover {
 @media screen and (min-width: 720px) {
   
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   header {
@@ -204,4 +207,3 @@ a.social:hover {
   }
 
 }
-
